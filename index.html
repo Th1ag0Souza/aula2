@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Tela de início do jogo -->
+<div id="start-screen" class="start-screen">
+    <img src="assets/logo.jpg" alt="Show do Milhão Logo" class="logo">
+    <button id="start-button">Iniciar Jogo</button>
+</div>
+
+<!-- Container do jogo (oculto inicialmente) -->
+<div class="game-container" style="display: none;">
+    <img src="assets/logo.jpg" alt="Show do Milhão Logo" class="logo">
+    <div class="question-container">
+        <div id="question">Pergunta 1</div>
+        <div class="options" id="options">
+            <button id="option1"></button>
+            <button id="option2"></button>
+            <button id="option3"></button>
+            <button id="option4"></button>
+        </div>
+        <div id="score" class="score">Valendo: R$ 1000</div>
+        <div id="mensagem"></div>
+    </div>
+</div>
+
+<!-- Tela de fim de jogo (oculta inicialmente) -->
+<div id="end-screen" class="end-screen" style="display: none;">
+    <h2>Fim de Jogo!</h2>
+    <p id="final-message">Parabéns! Você completou o jogo.</p>
+    <button id="restart-button">Jogar Novamente</button>
+</div>
+
+<!-- Áudios do jogo -->
+<audio id="audioAbertura" src="assets/audio/abertura-show-do-milhao.mp3"></audio>
+<audio id="audioErrou" src="assets/audio/errou.wav"></audio>
+<audio id="audioGanhou" src="assets/audio/ganhou.wav"></audio>
+<audio id="audioParabens" src="assets/audio/parabens.wav"></audio>
+
+<!-- Colocar outros áudios de perguntas -->
+<audio id="audio1000" src="assets/audio/1000.wav"></audio>
+<audio id="audio2000" src="assets/audio/2000.wav"></audio>
+<audio id="audio3000" src="assets/audio/3000.wav"></audio>
+<audio id="audio4000" src="assets/audio/4000.wav"></audio>
+<audio id="audio5000" src="assets/audio/5000.wav"></audio>
+<audio id="audio10000" src="assets/audio/10000.wav"></audio>
+<audio id="audio20000" src="assets/audio/20000.wav"></audio>
+<audio id="audio30000" src="assets/audio/30000.wav"></audio>
+<audio id="audio40000" src="assets/audio/40000.wav"></audio>
+<audio id="audio50000" src="assets/audio/50000.wav"></audio>
+<audio id="audio100000" src="assets/audio/100000.wav"></audio>
+<audio id="audio200000" src="assets/audio/200000.wav"></audio>
+<audio id="audio300000" src="assets/audio/300000.wav"></audio>
+<audio id="audio400000" src="assets/audio/400000.wav"></audio>
+<audio id="audio500000" src="assets/audio/500000.wav"></audio>
+<audio id="audio1000000" src="assets/audio/1000000.wav"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

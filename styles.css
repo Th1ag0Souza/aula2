@@ -1,0 +1,116 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #003366; /* Fundo azul escuro */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Tela de Início */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    background-color: #a3ad0f;
+    color: #003366;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#start-button:hover {
+    background-color: #FFB800;
+    transform: scale(1.05);
+}
+
+#start-button:active {
+    background-color: #FFA500;
+    transform: scale(0.98);
+}
+
+/* Container do Jogo */
+.game-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.question-container {
+    background-color: #001f4d;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos dos Botões de Opção */
+.options button {
+    background-color: #00509e;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.options button:hover {
+    background-color: #003366;
+    transform: scale(1.03);
+}
+
+.options button.correct {
+    background-color: #065809; /* Verde para resposta correta */
+}
+
+.options button.incorrect {
+    background-color: #8a0806; /* Vermelho para resposta incorreta */
+}
+
+/* Pontuação */
+.score {
+    font-size: 1.2em;
+    color: #994a09;
+    margin-top: 10px;
+    text-align: center;
+}
+
